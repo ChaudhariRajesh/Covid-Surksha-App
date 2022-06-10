@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.home_screen">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main2Activity"></activity>
+        <activity
+            android:name=".Symptoms"
+            android:label="Symptoms"
+            android:parentActivityName=".Prevention"
+            android:theme="@style/InnerActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Prevention" />
+        </activity>
+        <activity
+            android:name=".Prevention"
+            android:label="Prevention"
+            android:parentActivityName=".Symptoms"
+            android:theme="@style/InnerActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Symptoms" />
+        </activity>
+        <activity
+            android:name=".MythBuster"
+            android:label="Myth Buster"
+            android:parentActivityName=".Prevention"
+            android:theme="@style/InnerActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Prevention" />
+        </activity>
+        <activity
+            android:name=".OurHeroes"
+            android:label="Our Heroes"
+            android:parentActivityName=".Symptoms"
+            android:theme="@style/InnerActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Symptoms" />
+        </activity>
+        <activity
+            android:name=".PDFViewer"
+            android:label="Covid-19 Information"
+            android:theme="@style/InnerActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Symptoms" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

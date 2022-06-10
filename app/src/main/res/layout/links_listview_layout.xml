@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#002f6c"
+    android:padding="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/linkTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ministry of Health and \nFamily Welfare"
+        android:textSize="30dp"
+        android:textColor="#FAFAFA"
+        android:fontFamily="@font/quicksand_bold"/>
+
+    <TextView
+        android:id="@+id/linkTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/linkTextView1"
+        android:text="https://www.mohfw.gov.in/"
+        android:textColor="#00B0FF"/>
+
+
+</LinearLayout>

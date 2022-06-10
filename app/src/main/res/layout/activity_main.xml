@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#B3E5FC">
+
+    <ImageView
+        android:id="@+id/splashImageView1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_3"/>
+
+    <TextView
+        android:id="@+id/splashTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yatra_one"
+        android:textColor="@color/colorInnerActivityPrimaryDark"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="Covid Surksha" />
+
+
+
+    <ImageView
+        android:id="@+id/splashImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/maker_lab_logo2" />
+
+    <TextView
+        android:id="@+id/splashTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="CHOPDA"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#424242" />
+
+
+
+</LinearLayout>
